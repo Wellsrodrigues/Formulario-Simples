@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Cadastro</title>
+    </head>
+
+    <style>
+        .fundo{
+            background: rgb(229, 236, 228);
+            height: 100%;
+            text-align: center;     
+        }
+
+        h1{
+          font-size: 30px;
+          color: #0f0f0f;
+          text-transform: uppercase;
+          text-align: center;
+        }
+
+        button{
+            background: cornflowerblue;
+            color: black;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 8px 20px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        #mat{
+            text-transform: uppercase;
+        }
+   
+    </style>
+
+    <body>
+        <div align = center class="fundo">
+            <br><br><br><br><br><br><br><br>
+            <h1>ifma - campus caxias</h1>
+            <br><br><br>
+            <output><b>E-mail:</b> </output>
+            <input type="text" name="email" placeholder="fulano@gmail.com" style='width:300px; height:20px;' >
+            <br>
+            <br>
+            <output><b>Senha:</b> </output>
+            <input type="password" style='width:200px; height:20px;'>
+            <br>
+            <br>
+            <output><b>Matricula:</b> </output>
+            <input type="text" id = "mat" style='width:150px; height:20px;'>
+            <br>
+            <br>
+            <output><b>Turno:</b></output>
+            <output>Manha</output><input type="checkbox">
+            <output>Tarde</output><input type="checkbox">
+            <output>Noite</output><input type="checkbox">
+            <br>
+            <br>
+            <output><B>Turma:</B></output>
+            <input type="radio" name="but"><output>Medio</output>
+            <input type="radio" name="but"><output>Superior</output>
+
+            <br>
+            <br>
+
+            <button id="play"><b>Enviar</b></button>
+            <br><br>
+    </div>
+    </body>
+
+    <script>
+        play.addEventListener('click', function(){ 
+                var op = confirm("Tem certeza?");
+                 if(op == true){
+                     alert("Cadastro realizado com sucesso!");
+                 }
+        });
+    </script>
+
+</html>
